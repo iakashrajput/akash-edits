@@ -15,12 +15,11 @@ body{
   background:linear-gradient(180deg,var(--bg),#071021);
   color:#e6eef6;
   line-height:1.45;
-  overflow-x:hidden;
 }
 
 .container{max-width:var(--maxw);margin:0 auto;padding:28px}
 
-/* HEADER */
+/* Header */
 header{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:flex;align-items:center;gap:12px}
 .logo{
@@ -37,7 +36,7 @@ header{display:flex;align-items:center;justify-content:space-between;gap:16px}
   color:white;text-decoration:none;font-weight:700
 }
 
-/* HERO */
+/* Hero */
 .hero{
   display:grid;grid-template-columns:1fr 420px;
   gap:28px;align-items:center;margin-top:28px;
@@ -45,10 +44,7 @@ header{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .hero-left h1{font-size:34px;margin:0 0 12px}
 .sub{color:var(--muted);margin-bottom:16px}
 .badges{display:flex;gap:8px;margin-bottom:18px}
-.badge{
-  background:var(--glass);padding:8px 10px;border-radius:999px;
-  color:var(--muted);font-weight:600
-}
+.badge{background:var(--glass);padding:8px 10px;border-radius:999px;color:var(--muted);font-weight:600}
 .stats{display:flex;gap:16px;margin-top:12px}
 .stat{
   background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);
@@ -56,7 +52,7 @@ header{display:flex;align-items:center;justify-content:space-between;gap:16px}
 }
 .stat strong{display:block;font-size:18px}
 
-/* SHOWREEL */
+/* Showreel */
 .hero-right{
   background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);
   padding:14px;border-radius:12px;
@@ -66,18 +62,21 @@ header{display:flex;align-items:center;justify-content:space-between;gap:16px}
   aspect-ratio:16/9;overflow:hidden;position:relative;cursor:pointer;
 }
 .playbtn{
-  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
-  background:rgba(0,0,0,0.6);backdrop-filter:blur(4px);
-  border-radius:999px;padding:18px;display:flex;align-items:center;justify-content:center;
+  position:absolute;left:50%;top:50%;
+  transform:translate(-50%,-50%);
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(4px);border-radius:999px;
+  padding:18px;display:flex;align-items:center;justify-content:center;
 }
 
-/* PROJECT CARDS */
+/* Projects */
 section.projects{margin-top:34px}
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:18px;
 }
+
 .card{
   background:var(--card);
   border-radius:12px;
@@ -87,31 +86,37 @@ section.projects{margin-top:34px}
   perspective:1000px;
   height:300px;
 }
+
 .card-inner{
   width:100%;height:100%;
   transition:transform .6s;
   transform-style:preserve-3d;
 }
+
 .card:hover .card-inner{
   transform:rotateY(180deg);
 }
+
 .card-front, .card-back{
   position:absolute;inset:0;
   backface-visibility:hidden;
   border-radius:12px;
 }
+
 .card-front img{
   width:100%;height:100%;object-fit:cover;
 }
+
 .card-back{
   transform:rotateY(180deg);
-  background:#101a2e;padding:16px;
+  background:#101a2e;
+  padding:16px;
   overflow-y:auto;
 }
 .card-back h4{margin:0 0 8px}
 .card-back p{color:var(--muted);font-size:14px;margin:0}
 
-/* CONTACT BOX */
+/* Contact card */
 .contact{
   background:linear-gradient(90deg, rgba(124,58,237,0.08), rgba(6,182,212,0.06));
   padding:16px;border-radius:12px;display:flex;gap:12px;align-items:center;
@@ -121,24 +126,25 @@ section.projects{margin-top:34px}
   border:1px solid rgba(255,255,255,0.06);color:var(--muted);text-decoration:none;
 }
 
-/* SCROLL REVEAL ANIMATION */
-.reveal{
-  opacity:0;
-  transform:translateY(40px);
-  transition:all .9s ease;
+/* Modal */
+.modal{
+  position:fixed;inset:0;background:rgba(3,7,12,0.6);
+  display:flex;align-items:center;justify-content:center;
+  padding:24px;z-index:60;
 }
-.reveal.active{
-  opacity:1;
-  transform:translateY(0);
+.modal-content{
+  width:min(1000px,96%);
+  background:#071023;padding:12px;border-radius:10px;
 }
 
-/* FOOTER */
+/* Footer */
 footer{
-  margin:36px 0 80px;color:var(--muted);
-  display:flex;justify-content:space-between;align-items:center;
+  margin:36px 0 80px;
+  color:var(--muted);
+  display:flex;justify-content:space-between;align-items:center
 }
 
-/* RESPONSIVE */
+/* Responsive */
 @media(max-width:880px){
   .hero{grid-template-columns:1fr}
 }
