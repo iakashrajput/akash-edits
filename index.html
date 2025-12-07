@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Akash — Video Editor Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="logo">AS</div>
+        <div>
+          <div style="font-weight:700">Akash — Video Editor & Web Designer</div>
+          <div style="color:var(--muted);font-size:13px">Showreel • Ads • Short-form • Websites</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Hire Me — $11/hr</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-left">
+          <h1 class="reveal">Crafting cinematic edits & pixel-perfect websites that convert</h1>
+          <div class="sub reveal delay-1">Short-form • Color Grading • Motion Graphics • Responsive web design & landing pages</div>
+
+          <div class="badges reveal delay-2">
+            <span class="badge">Showreel Ready</span>
+            <span class="badge">Commercial Ads</span>
+            <span class="badge">Responsive Sites</span>
+          </div>
+
+          <div class="stats" style="margin-top:14px">
+            <div class="stat reveal delay-3"><strong>5+ yrs</strong>Experience</div>
+            <div class="stat reveal delay-4"><strong>120+</strong>Projects</div>
+            <div class="stat reveal delay-5"><strong>48 hrs</strong>Delivery</div>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:10px">
+            <a href="#contact" class="cta reveal delay-4">Request Quote</a>
+            <a class="btn-outline reveal delay-5" href="#projects">View Work</a>
+          </div>
+        </div>
+
+        <aside class="hero-right reveal delay-3">
+          <div class="showreel" id="openShowreel" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=1400&q=80" alt="showreel" style="width:100%;height:100%;object-fit:cover;filter:brightness(0.6)">
+            <div class="playbtn"><svg viewBox="0 0 24 24" width="28" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+          <div style="margin-top:12px;color:var(--muted);font-size:13px">Showreel • Color graded • 1080p</div>
+        </aside>
+      </section>
+
+      <!-- SERVICES (reveal) -->
+      <section id="services" style="margin-top:36px">
+        <h2 class="reveal">Services I Offer</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px">
+          <div class="card" style="perspective:none;height:auto;padding:14px;">
+            <div style="font-weight:700">Short-Form Editing</div>
+            <div style="color:var(--muted);margin-top:6px">Reels, TikToks, Shorts with hooks tuned for retention.</div>
+          </div>
+
+          <div class="card" style="perspective:none;height:auto;padding:14px;">
+            <div style="font-weight:700">Commercial Ads</div>
+            <div style="color:var(--muted);margin-top:6px">Ad cuts, logo intro, sound design and deliverables.</div>
+          </div>
+
+          <div class="card" style="perspective:none;height:auto;padding:14px;">
+            <div style="font-weight:700">Web Design & Landing Pages</div>
+            <div style="color:var(--muted);margin-top:6px">HTML/CSS landing pages, responsive UI, performance-optimized builds.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS (many samples – reveals on scroll) -->
+      <section id="projects" class="projects" style="margin-top:40px">
+        <h2 class="reveal">Selected Projects</h2>
+        <div class="grid" style="margin-top:18px">
+
+          <!-- sample cards: each front image + back text; front has reveal -->
+          <div class="card reveal" data-video="https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1" data-reveal-delay="0">
+            <div class="card-inner">
+              <div class="card-front"><img src="https://images.unsplash.com/photo-1631237535546-4cbfbdeded8e?q=80&w=1625&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Brand Launch"></div>
+              <div class="card-back"><h4>Brand Launch Ad</h4><p>30s ad with punchy edits, logo reveal, and social cuts.</p></div>
+            </div>
+          </div>
+
+          <div class="card reveal delay-1" data-video="https://www.youtube.com/embed/ysz5S6PUM-U?autoplay=1" data-reveal-delay="80">
+            <div class="card-inner">
+              <div class="card-front"><img src="https://images.unsplash.com/photo-1728727919015-73faa010e45d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Travel Vlog"></div>
+              <div class="card-back"><h4>Travel Vlog</h4><p>Highlight reel with music sync and smooth transitions.</p></div>
+            </div>
+          </div>
+
+          <div class="card reveal delay-2" data-video="https://www.youtube.com/embed/3fumBcKC6RE?autoplay=1" data-reveal-delay="160">
+            <div class="card-inner">
+              <div class="card-front"><img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product Demo"></div>
+              <div class="card-back"><h4>Product Demo</h4><p>Explainer with animated overlays and clean pacing.</p></div>
+            </div>
+          </div>
+
+          <div class="card reveal delay-3" data-video="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1" data-reveal-delay="240">
+            <div class="card-inner">
+              <div class="card-front"><img src="https://images.unsplash.com/photo-1641951820852-20fcd532e205?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Social Cut"></div>
+              <div class="card-back"><h4>Reel Trend Edit</h4><p>Vertical-first edit optimized for shares and loops.</p></div>
+            </div>
+          </div>
+
+          <div class="card reveal delay-4" data-video="https://www.youtube.com/embed/2Vv-BfVoq4g?autoplay=1" data-reveal-delay="320">
+            <div class="card-inner">
+              <div class="card-front"><img src="https://images.unsplash.com/photo-1602261321009-3800df6e19b4?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Music Video"></div>
+              <div class="card-back"><h4>Music Video Cut</h4><p>Beat-synced edits, artistic color grading, cinematic framing.</p></div>
+            </div>
+          </div>
+
+          <div class="card reveal delay-5" data-video="https://www.youtube.com/embed/kXYiU_JCYtU?autoplay=1" data-reveal-delay="400">
+            <div class="card-inner">
+              <div class="card-front"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fitness"></div>
+              <div class="card-back"><h4>Fitness Reel</h4><p>Rapid cuts, captions, and energetic punch-ins for engagement.</p></div>
+            </div>
+          </div>
+
+          <!-- extra samples to make page long -->
+          <div class="card reveal" data-video="https://www.youtube.com/embed/jNQXAC9IVRw?autoplay=1" data-reveal-delay="0">
+            <div class="card-inner">
+              <div class="card-front"><img src="https://images.unsplash.com/photo-1557804506-669a67965ba0" alt="Corporate"></div>
+              <div class="card-back"><h4>Corporate Training</h4><p>Clean, paced edit with lower thirds and chapters.</p></div>
+            </div>
+          </div>
+
+          <div class="card reveal delay-1" data-video="https://www.youtube.com/embed/OPf0YbXqDm0?autoplay=1" data-reveal-delay="80">
+            <div class="card-inner">
+              <div class="card-front"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fashion"></div>
+              <div class="card-back"><h4>Fashion Promo</h4><p>Slow-mo highlights and color tweaks for premium look.</p></div>
+            </div>
+          </div>
+
+          <div class="card reveal delay-2" data-video="https://www.youtube.com/embed/2vjPBrBU-TM?autoplay=1" data-reveal-delay="160">
+            <div class="card-inner">
+              <div class="card-front"><img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Event"></div>
+              <div class="card-back"><h4>Event Recap</h4><p>Fast highlights, crowd shots, and energetic music.</p></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="reveal testimonials" style="margin-top:42px">
+        <h2 class="reveal">Testimonials</h2>
+        <div class="testimonials" style="margin-top:12px">
+          <div class="testimonial reveal">
+            <strong>“Great work — increased our CTR.”</strong>
+            <p style="color:var(--muted)">Quick turnaround and excellent edits that matched our brand voice.</p>
+          </div>
+          <div class="testimonial reveal delay-1">
+            <strong>“Highly recommended.”</strong>
+            <p style="color:var(--muted)">Reliable and detail-oriented with smooth communication.</p>
+          </div>
+          <div class="testimonial reveal delay-2">
+            <strong>“Consistent quality.”</strong>
+            <p style="color:var(--muted)">Delivered multi-format assets on time for our campaign.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG SAMPLES -->
+      <section class="reveal blogs" style="margin-top:42px">
+        <h2 class="reveal">Recent Articles</h2>
+        <div class="blogs" style="margin-top:12px">
+          <article class="card reveal" style="height:220px;padding:0;overflow:hidden">
+            <div style="padding:12px">
+              <h4>How to Hook Viewers in 3 Seconds</h4>
+              <p style="color:var(--muted)">Tactics for short-form editors to maximize retention.</p>
+            </div>
+          </article>
+          <article class="card reveal delay-1" style="height:220px;padding:0;overflow:hidden">
+            <div style="padding:12px">
+              <h4>Landing Page Checklist for Creators</h4>
+              <p style="color:var(--muted)">Simple design and speed tips to convert visitors.</p>
+            </div>
+          </article>
+          <article class="card reveal delay-2" style="height:220px;padding:0;overflow:hidden">
+            <div style="padding:12px">
+              <h4>Color Grading Basics</h4>
+              <p style="color:var(--muted)">A short intro to lift footage with style.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ABOUT (long single-line + 5 alternatives below) -->
+      <section id="about" style="margin-top:46px">
+        <h2 class="reveal">About Me</h2>
+
+        <!-- Long single-line about me (replace this as needed) -->
+        <p class="reveal" style="color:var(--muted);margin-top:12px">
+          I am a multidisciplinary creative — a designer and website creator who crafts pixel-perfect responsive websites, and a video editor who brings stories to life through clean editing, intentional pacing, color grading, motion graphics, and marketing-focused cuts that help brands grow; I combine technical front-end skills (HTML, CSS, responsive layouts) with visual storytelling and fast delivery to deliver both beautiful websites and high-performing videos that convert.
+        </p>
+
+        <!-- 5 alternate long-lines (pick one and paste over above paragraph) -->
+        <div style="margin-top:12px;color:var(--muted);font-size:13px">
+          <strong>Alternate long-lines (copy any):</strong>
+          <ol>
+            <li>I design compelling website experiences and edit engaging videos — combining visual design, user-focused layouts, and cinematic editing techniques to help brands tell clearer stories and increase engagement across web and social platforms.</li>
+            <li>As a designer and website creator with strong video editing skills, I specialise in creating fast, responsive websites and social-first video content — delivering artful visuals, pixel-perfect code, and edits that boost conversions and viewer retention.</li>
+            <li>My work sits at the intersection of UX, visual design, and storytelling — I build landing pages and websites that convert, and craft video edits with rhythm, color, and motion that amplify brand messaging.</li>
+            <li>I create polished websites and social videos with a focus on usability, speed, and aesthetics — from HTML/CSS builds and responsive layouts to short-form edits and cinematic color grading that elevate brand perception.</li>
+            <li>Combining front-end web skills and post-production experience, I deliver complete creative packages — landing pages, site builds, showreels, and social edits that look premium and perform in the real world.</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- FAQ to lengthen page -->
+      <section class="faq" style="margin-top:36px">
+        <h2 class="reveal">FAQ</h2>
+        <div style="margin-top:12px">
+          <details class="reveal"><summary>What tools do you use?</summary><p style="color:var(--muted)">Premiere Pro, After Effects, DaVinci Resolve; for web: HTML/CSS, basic JS, and GitHub Pages deployment.</p></details>
+          <details class="reveal delay-1" style="margin-top:8px"><summary>Typical turnaround?</summary><p style="color:var(--muted)">Short edits: 24–48 hours. Larger projects: depends on scope, usually 3–7 days.</p></details>
+          <details class="reveal delay-2" style="margin-top:8px"><summary>Do you provide source files?</summary><p style="color:var(--muted)">Yes — delivered on request (project permitting) as editable project files and exports.</p></details>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" style="margin-top:46px">
+        <h2 class="reveal">Contact</h2>
+        <div style="display:flex;gap:18px;margin-top:12px;flex-wrap:wrap">
+          <form id="contactForm" style="flex:1;min-width:260px;background:rgba(255,255,255,0.02);padding:12px;border-radius:10px">
+            <label>Name</label>
+            <input name="name" required style="width:100%;padding:10px;margin-bottom:8px;border-radius:8px;background:rgba(255,255,255,0.03);border:none;color:white">
+            <label>Email</label>
+            <input type="email" required style="width:100%;padding:10px;margin-bottom:8px;border-radius:8px;background:rgba(255,255,255,0.03);border:none;color:white">
+            <label>Message</label>
+            <textarea rows="4" required style="width:100%;padding:10px;margin-bottom:8px;border-radius:8px;background:rgba(255,255,255,0.03);border:none;color:white"></textarea>
+            <button type="submit" class="cta">Send Message</button>
+          </form>
+
+          <div style="width:280px;background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;color:var(--muted)">
+            <div style="font-weight:700;margin-bottom:8px">Contact Info</div>
+            <div>Email: akashrajput2024@gmail.com</div>
+            <div>Phone: +91 7004728846</div>
+            <div style="display:flex;gap:8px;margin-top:8px">
+  <a class="btn-outline" href="https://www.youtube.com" target="_blank">YouTube</a>
+  <a class="btn-outline" href="https://www.instagram.com/iakshrajput" target="_blank">Instagram</a>
+</div>
+
+        </div>
+      </section></a></div>
+          </div>
+        </div>
+      </section>
+
+      <footer style="margin-top:46px">
+        <div>© 2025 Akash — Video Editor & Web Designer</div>
+        <div style="color:var(--muted)">Built with ❤️ — Available for hire</div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal" style="display:none">
+    <div class="modal-content">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <div style="font-weight:700">Playback</div>
+        <button id="closeModal" style="background:none;border:none;color:var(--muted);font-size:16px;cursor:pointer">✕</button>
+      </div>
+      <div id="playerWrap"></div>
+    </div>
+  </div>
+
+  <!-- JS: Reveal effect + modal player -->
+  <script>
+    // IntersectionObserver reveal
+    (function(){
+      const revealEls = Array.from(document.querySelectorAll('.reveal'));
+      const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            const el = entry.target;
+            const delay = el.datasetRevealDelay || el.getAttribute('data-reveal-delay') || 0;
+            // parse delay to int
+            const d = parseInt(delay,10) || 0;
+            setTimeout(()=> el.classList.add('active'), d);
+            observer.unobserve(el);
+          }
+        });
+      }, {threshold: 0.12});
+      revealEls.forEach(el=>{
+        // normalize: if element already has delay classes from CSS, respect them, otherwise use data attribute
+        observer.observe(el);
+      });
+    })();
+
+    // Modal player open/close
+    function openModalWith(url){
+      const modal = document.getElementById('modal');
+      const wrap = document.getElementById('playerWrap');
+      wrap.innerHTML = `<iframe src="${url}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:100%;height:560px;border-radius:8px"></iframe>`;
+      modal.style.display='flex';
+      document.body.style.overflow='hidden';
+    }
+
+    // showreel
+    document.getElementById('openShowreel').addEventListener('click', function(e){
+      openModalWith(this.dataset.video);
+    });
+
+    // card clicks
+    document.querySelectorAll('.card[data-video]').forEach(card=>{
+      card.addEventListener('click', ()=>{
+        const url = card.dataset.video;
+        if(url) openModalWith(url);
+      });
+    });
+
+    // close modal
+    document.getElementById('closeModal').addEventListener('click', ()=>{
+      document.getElementById('playerWrap').innerHTML='';
+      document.getElementById('modal').style.display='none';
+      document.body.style.overflow='auto';
+    });
+
+    // contact form fake submit
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thanks! Message sent. I will reply shortly.');
+      this.reset();
+    });
+
+    // accessibility: ESC closes modal
+    document.addEventListener('keydown', (e)=>{
+      if(e.key === 'Escape'){
+        const modal = document.getElementById('modal');
+        if(modal.style.display === 'flex'){
+          document.getElementById('playerWrap').innerHTML='';
+          modal.style.display='none';
+          document.body.style.overflow='auto';
+        }
+      }
+    });
+  </script>
+</body>
+</html>
